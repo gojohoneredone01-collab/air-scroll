@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirScroll - Contactless Presentation Controller</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-white font-sans min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+    
+    <!-- Header -->
+    <header class="p-6 border-b border-slate-800 flex justify-between items-center max-w-6xl mx-auto w-full">
+        <div class="flex items-center space-x-3">
+            <div class="w-4 h-4 bg-cyan-400 rounded-full animate-ping"></div>
+            <span class="text-xl font-bold tracking-wider bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">AIRSCROLL.AI</span>
+        </div>
+        <span class="text-xs uppercase tracking-widest px-3 py-1 bg-slate-900 border border-slate-800 rounded-full text-cyan-400">Event Demo Ready</span>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="max-w-4xl mx-auto px-6 py-12 text-center flex-grow flex flex-col justify-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+            Control Presentations <br><span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 bg-clip-text text-transparent">Without Lifting a Finger.</span>
+        </h1>
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+            A state-of-the-art computer vision solution that tracks your natural hand gestures to scroll, navigate, and click seamlessly. Perfect for stage demos and touch-free environments.
+        </p>
+
+        <!-- Interactive Demo Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left mb-12">
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl backdrop-blur hover:border-cyan-500/50 transition">
+                <div class="text-cyan-400 font-mono text-sm mb-2">01 / GESTURE</div>
+                <h3 class="text-lg font-bold mb-1">Raise Hand Up</h3>
+                <p class="text-slate-400 text-sm">Instantly triggers smooth page scrolling upwards for rapid slide navigation.</p>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl backdrop-blur hover:border-cyan-500/50 transition">
+                <div class="text-cyan-400 font-mono text-sm mb-2">02 / GESTURE</div>
+                <h3 class="text-lg font-bold mb-1">Lower Hand Down</h3>
+                <p class="text-slate-400 text-sm">Commands the system to scroll smoothly downward through reports and documents.</p>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl backdrop-blur hover:border-cyan-500/50 transition">
+                <div class="text-cyan-400 font-mono text-sm mb-2">03 / GESTURE</div>
+                <h3 class="text-lg font-bold mb-1">Finger Pinch</h3>
+                <p class="text-slate-400 text-sm">Bring your thumb and index finger together to perform a contactless click action.</p>
+            </div>
+        </div>
+
+        <div class="inline-flex items-center space-x-4 bg-slate-900 border border-slate-800 p-4 rounded-xl">
+            <span class="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></span>
+            <span class="text-sm font-mono text-slate-300">System status: Ready to run via python app.py</span>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 border-t border-slate-900 text-slate-600 text-sm">
+        Built with OpenCV, MediaPipe, and Tailwind CSS for Event Showcase.
+    </footer>
+</body>
+</html>
